@@ -29,8 +29,14 @@ const App: () => React$Node = () => {
   const [peopele, setPeople] = useState("");
 
   const fetchPeople = () => {
-    const fetchedPeople = 
+    const fetchedPeople = fetch('https://swapi.co/api/people/1')
+    .then((response) => {
+      return response.json()
+    }).then((myJSOn) =>{
+      setPeople(myJSOn)
+    })
   }
+  
   return (
     <>
       <StatusBar barStyle="dark-content" />
