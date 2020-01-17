@@ -27,7 +27,10 @@ import {
 const App: () => React$Node = () => {
 
   const [peopele, setPeople] = useState("");
-  
+
+  const fetchPeople = () => {
+    const fetchedPeople = 
+  }
   return (
     <>
       <StatusBar barStyle="dark-content" />
