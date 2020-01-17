@@ -14,6 +14,7 @@ import {
   View,
   Text,
   StatusBar,
+  Button
 } from 'react-native';
 
 import {
@@ -36,7 +37,7 @@ const App: () => React$Node = () => {
       setPeople(myJSOn)
     })
   }
-  
+
   return (
     <>
       <StatusBar barStyle="dark-content" />
@@ -51,6 +52,7 @@ const App: () => React$Node = () => {
             </View>
           )}
           <View style={styles.body}>
+            <View> </View>
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>Step One</Text>
               <Text style={styles.sectionDescription}>
